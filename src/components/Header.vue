@@ -1,14 +1,14 @@
 <template>
-    <div id='header'>
+    <div id='header-text'>
         <h1 >{{Name}}</h1>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Name',
+    name: 'HeaderText',
     props: {
-        Name: Array,
+        Name: String,
     }
 }
 </script>

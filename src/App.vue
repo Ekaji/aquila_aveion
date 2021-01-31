@@ -1,20 +1,19 @@
 <template>
   <div id="app">
-    <Header :Name='Name' />
+    <HeaderText :Name='Name' />
     <div class='content'>
-      <ImageBox />
+      <imageBox />
       <socials :SocialMedia='SocialMedia' />
     </div>
-    <NavBar />
- 
+    <navBar />
   </div>
 </template>
 
 <script>
 import axios from 'axios';
-import socials from '@/components/Socials.vue';
+import Socials from '@/components/Socials.vue';
 import ImageBox from '@/components/ImageBox.vue';
-import Header from '@/components/Header.vue';
+import HeaderText from '@/components/Header.vue';
 import NavBar from '@/components/NavBar.vue';
 
 window.axios = axios;
@@ -24,9 +23,9 @@ window.axios = axios;
 export default{
   name: 'app',
   components: {
-    socials,
+    Socials,
     ImageBox,
-    Header,
+    HeaderText,
     NavBar
   },
   data(){
@@ -49,7 +48,7 @@ export default{
 };
 </script>
 
-<style>
+<style >
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
 
 html, body {
@@ -67,6 +66,5 @@ html, body {
 
 .content{
   display: flex;
-
 }
 </style>
