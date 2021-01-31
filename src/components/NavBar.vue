@@ -29,6 +29,7 @@ export default {
     #links {
         display: flex;
         margin-top: 30px;
+        margin-left: 40px;
     }
     .link{
         align-self: center;
