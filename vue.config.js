@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/aquila aveion/'
+    publicPath: '/project name/'
   }
